@@ -19,6 +19,7 @@ load("@rules_python//python:repositories.bzl", "python_register_toolchains")
 python_register_toolchains(
     name = "python3_9",
     python_version = "3.9",
+    ignore_root_user_error = True,
 )
 
 load("//:docs/stardoc_repository.bzl", "stardoc_repository")
